@@ -9,4 +9,4 @@ jobs:
     with:
       project: 'roboshop'
       Component: 'catalogue'
-    
+    secrets: inherit
