@@ -10,6 +10,9 @@ jobs:
       project: 'roboshop'
       Component: 'catalogue'
     secrets: inherit
+    permissions:
+      contents: read
+      statuses: write
   
   # main-pipeline:
   #   if: github.ref_name == 'main'
