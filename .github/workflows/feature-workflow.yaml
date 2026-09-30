@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   feature-pipeline:
-    if: github.ref_name == 'feature-*'
+    if: github.ref_name != 'main'
     uses: shekharreddy-e/workflows/.github/workflows/nodejs-feature-pipeline.yaml@main
     with:
       project: 'roboshop'
