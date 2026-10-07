@@ -1,0 +1,5 @@
+appVersion: v2 # this is K8S helm version
+name: catalogue
+version: 0.0.1
+appVersion: 1.0.0
+description: "installing 1.0.0 "

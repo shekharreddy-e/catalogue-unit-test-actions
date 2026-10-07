@@ -1,0 +1,17 @@
+name: feature-pipeline
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  feature-pipeline:
+    if: github.ref_name != 'main'
+    uses: shekharreddy-e/workflows/.github/workflows/nodejs-feature-pipeline.yaml@main
+    with:
+      project: 'roboshop'
+      Component: 'catalogue'
+    secrets: inherit
+    permissions:
+      contents: read
+      statuses: write
+      
+      
