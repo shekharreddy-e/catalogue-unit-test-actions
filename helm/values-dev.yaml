@@ -2,4 +2,4 @@ namespace: roboshop-dev
 configMap:
   MONGO_URL: "mongodb://mongodb:27017/catalogue"
 deployment:
-  imageVersion: "d18ea1a"
+  imageVersion: "5fb50f7"
