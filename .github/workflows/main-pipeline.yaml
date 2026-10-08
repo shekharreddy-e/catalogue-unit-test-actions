@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - 'main'
+    paths-ignore:
+      - 'helm/values-*.yaml'
   workflow_dispatch:
     inputs:
       deploy_to:
